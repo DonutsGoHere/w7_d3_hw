@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import ChartContainer from './containers/ChartContainer';
+import ChartList from './components/ChartList';
+import ListItem from './components/ListItem';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>UK Top 20 Chart List</h1>
+      <ChartContainer />
     </div>
-  );
+  )
 }
 
 export default App;
